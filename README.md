@@ -16,4 +16,7 @@ Installing KMK is a little more involved.
 3. Plug in your keyboard without holding down the bootsel button, and a drive called circuit python should appear. 
 4. Copy boot.py from the KMK firmware, and main.py from this repository onto your circuit python drive (your pico) 
 5. Your keyboard should immidatly start working!
+
+In the hardware file, you will find a the schematic and PCB's in .PDF form as well as .JSON that can be imported into Easy EDA. 
+
 ![image](https://user-images.githubusercontent.com/58665565/154625246-d543506a-e4ff-4449-9799-5506421c1dbc.png)
