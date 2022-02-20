@@ -8,7 +8,7 @@ Here you will find firmware for the Pico 87 Mechanical Keyboard, as well as the 
 If you would like to get your hands on a Pico 87 Mechanical keyboard, you can find the project on Kickstarter. 
 https://www.kickstarter.com/projects/1639195067/the-bolt-industries-pico-87-mechanical-keyboard
 
-There are two firmwares that can be used on te Pico 87 Mechanical keyboard. 
+The Pico 87 Mechanical keyboard is compatable with two flavors of firmware. 
 The first is BMK. BMK stands for Bolt Industries Mechanical Keyboard. It is a 
 custom built firmware written in the Arduino IDE. If you are comfortable using the 
 Arduino IDE, then You will probably like BMK. To install it, simply download the 
@@ -19,7 +19,7 @@ Installing KMK is a little more involved.
 1. Download and flash circuit python to your Pico. https://circuitpython.org/board/raspberry_pi_pico/
 2. Download and unzip the KMK firmware from the KMK repo. https://github.com/KMKfw/kmk_firmware
 3. Plug in your keyboard without holding down the bootsel button, and a drive called circuit python should appear. 
-4. Copy boot.py from the KMK firmware, and main.py from this repository onto your circuit python drive (your pico) 
+4. Copy boot.py from the KMK firmware, and main.py from this repository onto your circuit python drive (your pico.) 
 5. Your keyboard should immidatly start working!
 
 In the hardware file, you will find the schematic and PCB's in .PDF form as well as .JSON that can be imported into Easy EDA. so you can modify tem to your liking. 
