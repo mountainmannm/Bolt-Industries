@@ -1,4 +1,6 @@
 # Bolt-Industries
+![image](https://user-images.githubusercontent.com/58665565/154830776-ed1128a7-f4ef-473b-8738-91d0eeef3ae1.png)
+
 Welcome to the Bolt Industries Github Repo.
 
 Here you will find firmware for the Pico 87 Mechanical Keyboard, as well as the open source hardware. 
