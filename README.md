@@ -3,6 +3,9 @@ Welcome to the Bolt Industries Github Repo.
 
 Here you will find firmware for the Pico 87 Mechanical Keyboard, as well as the open source hardware. 
 
+If you would like to get your hands on a Pico 87 Mechanical keyboard, you can find the project on Kickstarter. 
+https://www.kickstarter.com/projects/1639195067/the-bolt-industries-pico-87-mechanical-keyboard
+
 There are two firmwares that can be used on te Pico 87 Mechanical keyboard. 
 The first is BMK. BMK stands for Bolt Industries Mechanical Keyboard. It is a 
 custom built firmware written in the Arduino IDE. If you are comfortable using the 
