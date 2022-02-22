@@ -8,11 +8,12 @@ Here you will find firmware for the Pico 87 Mechanical Keyboard, as well as the 
 If you would like to get your hands on a Pico 87 Mechanical keyboard, you can find the project on Kickstarter. 
 https://www.kickstarter.com/projects/1639195067/the-bolt-industries-pico-87-mechanical-keyboard
 
-The Pico 87 Mechanical keyboard is compatable with two flavors of firmware. 
-The first is BMK. BMK stands for Bolt Industries Mechanical Keyboard. It is a 
-custom built firmware written in the Arduino IDE. If you are comfortable using the 
-Arduino IDE, then You will probably like BMK. To install it, simply download the 
-sketch BMK.ino and follow the directions in the sketch. 
+###BMK
+##Bolt (Industries) Mechanical Keyboard
+
+The Pico 87 Mechanical keyboard is compatable with two flavors of firmware. The first is BMK. BMK stands for Bolt Industries Mechanical Keyboard. It is a custom built firmware written in the Arduino IDE. If you are comfortable using the Arduino IDE, then You will probably like BMK. Changing the function of a key is as easy as changing a line of code in the sketch. BMK uses the keyboard.h library to doall the keyboard functions. For more information about what you can do with the Keyboard.h library, visit the arduino referande page here: https://www.arduino.cc/reference/en/language/functions/usb/keyboard/ To install it, simply download the sketch called BMK.ino and follow the directions in the sketch.
+
+
 
 KMK is a mechanical keyboard firmware that runs on circuit python. 
 Installing KMK is a little more involved.
