@@ -26,7 +26,7 @@ Installing KMK is a little more involved.
 1. Download and flash circuit python to your Pico. https://circuitpython.org/board/raspberry_pi_pico/
 2. Download and unzip the KMK firmware from the KMK repo. https://github.com/KMKfw/kmk_firmware
 3. Plug in your keyboard without holding down the bootsel button, and a drive called circuit python should appear. 
-4. Copy boot.py from the KMK firmware, and main.py from this repository onto your circuit python drive (your pico.) 
+4. Copy boot.py from the KMK firmware, and code.py from this repository onto your circuit python drive (your pico.) 
 5. Your keyboard should immidatly start working!
 
 Note that this is the first time Ive ever done anything with Python. The main.py file works like a perfectly functioning keyboard, but I'm sure it can be done better. If you feel inclined to make any improvements, please don't hesitate to submit a pull request or email me your code and I'll commit it to the main repo. 
