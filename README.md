@@ -11,7 +11,7 @@ https://www.kickstarter.com/projects/1639195067/the-bolt-industries-pico-87-mech
 
 Hardware:
 
-In the hardware file, you will find the schematic and PCB's in .PDF form as well as .JSON that can be imported into Easy EDA so that you can modify them to your liking.
+In the hardware folders, you will find the schematic and PCB's in .PDF form as well as .JSON that can be imported into Easy EDA so that you can modify them to your liking.
 
 BMK firmware
 Bolt (Industries) Mechanical Keyboard
