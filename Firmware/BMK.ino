@@ -106,7 +106,7 @@ const int repeatDelayRepeat = 30;
 const int preDelay = 10;
 
 //The key needs to be pressed for at least this long to register. This could be set to zero but that might allow unintended keypresses
-const int minimumKeypressDelay = 8;
+const int minimumKeypressDelay = 5;
 
 // This is the mapping from row, column to key for rows 2 through 6. If you want to override a key, just enter the new key here.
 // If you want to write your own special handling, enter a 0x00 here to skip the key loop then write your special handling elsewhere.
