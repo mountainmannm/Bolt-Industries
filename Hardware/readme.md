@@ -1,0 +1,1 @@
+Here in the hardware folder you will find all of the open source hardware files. The contents of the two folders is self explanatory. Corner guard.stl is a 3d printable corner guard that prevents your left palm from rubbing on the lower left corner of the sharp PCB. 
