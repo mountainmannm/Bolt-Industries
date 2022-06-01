@@ -112,7 +112,7 @@ const int minimumKeypressDelay = 5;
 // If you want to write your own special handling, enter a 0x00 here to skip the key loop then write your special handling elsewhere.
 //                                     0     1     2     3     4     5     6     7     8     9    10    11    12    13    14    15    16    17
 
-const char sKeysForRows[5][18] = { { '~',  '1',  '2',  '3',  '4',  '5',  '6',  '7',  '8',  '9',  '0',  '-',  '=', 0x00, 0xB2, 0xD1, 0xD2, 0xD3 },
+const char sKeysForRows[5][18] = { { '`',  '1',  '2',  '3',  '4',  '5',  '6',  '7',  '8',  '9',  '0',  '-',  '=', 0x00, 0xB2, 0xD1, 0xD2, 0xD3 },
                                   { 0xB3, 0x00,  'q',  'w',  'e',  'r',  't',  'y',  'u',  'i',  'o',  'p',  '[',  ']', '\\', 0xD4, 0xD5, 0xD6 },
                                   { 0x00, 0x00,  'a',  's',  'd',  'f',  'g',  'h',  'j',  'k',  'l',  ';', '\'', 0xB0, 0x00, 0x00, 0x00, 0x00 },
                                   { 0x00, 0x00,  'z',  'x',  'c',  'v',  'b',  'n',  'm',  ',',  '.',  '/', 0x00, 0x00, 0x00, 0x00, 0xDA, 0x00 },
