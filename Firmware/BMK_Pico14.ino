@@ -1,4 +1,3 @@
-
 // Written Feb 2022 by Brian DiDonna. 
 
 //This library is free software; you can redistribute it and/or
@@ -104,10 +103,10 @@ const int minimumKeypressDelay = 10;
 // If you want to write your own special handling, enter a 0x00 here to skip the key loop then write your special handling elsewhere.
 // 
 //                                     0     1     2     3     4     5     6     7     8     9    10    11    12    13    14    15    16    17
-const char sKeysForRows[5][18] = { {  '7',  '8',  '9', 0x00, 0x00, 0x00,0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 },
-                                   {  '4',  '5',  '6', 0x00, 0x00, 0x00,0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 },
-                                   {  '1',  '2',  '3', 0x00, 0x00, 0x00,0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 },
-                                   {  '0', 0x00, 0xD4, 0x00, 0x00, 0x00,0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00},
+const char sKeysForRows[5][18] = { {  0xE7, 0xE8, 0xE9, 0x00, 0x00, 0x00,0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 },
+                                   {  0xE4, 0xE5, 0xE6, 0x00, 0x00, 0x00,0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 },
+                                   {  0xE1,  0xE2,  0xE3, 0x00, 0x00, 0x00,0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 },
+                                   {  0xEA, 0x00, 0xEB, 0x00, 0x00, 0x00,0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00},
                                    { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }
 };
 
@@ -115,7 +114,7 @@ const char sKeysForRows[5][18] = { {  '7',  '8',  '9', 0x00, 0x00, 0x00,0x00, 0x
 // If you want to write your own special handling, enter a 0x00 here to skip the key loop then write your special handling elsewhere.
 // Note that this is simply the top row of keys on the Pico 14 macro pad.
 //                                 0     1     2     3     4     5     6     7     8     9    10    11    12    13    14    15    16    17
-const char sKeysForRowsFn[18] = { 0x00, '/', '*', 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 };
+const char sKeysForRowsFn[18] = { 0xDB, '/', '*', 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 };
 
 // Here we keep track of the last time the various keys were pressed. This tracks rows 2 through 6. This is
 // used to control the timing of key repeats
@@ -128,7 +127,7 @@ static bool sBoolCtrl = false;
 static bool sBoolAlt = false;
 static bool sBoolGui = false;
 static bool sBoolCapsLock = false;
-
+static bool sBoolNumLock = false; // flag for NumLock
 // RAII class to conditionally toggle modifier when class object goes in and out of scope.
 // If the modifier is already pressed then we don't do anything.
 // This class is templated on the variables we pass in to allow us to declare types associated with the keys -
@@ -345,18 +344,17 @@ void loop() {
   //------------------------------------------------------
   //------------------------------------------------------
 
-  // CAPS LOCK
+  // NUM LOCK
   // The behavior of the keyboard library capslock is weird
   // we are just going to roll our own
-  static bool capsLockPressed = false;
-//  {
-//    ScopedRowActive rowLow( Row_4 );
-//    if ( nonRepeatingKeyPress( Col_0, capsLockPressed ) ) {
-//      sBoolCapsLock = !sBoolCapsLock;
-//      auto ledState = sBoolCapsLock ? HIGH : LOW;
-//      digitalWrite( LED_1, ledState);
-//    }
-//  } // after this brace row 4 is inactive
+  static bool NumLockPressed = false;
+  {
+    ScopedRowActive rowLow( Row_0 );
+    if ( nonRepeatingKeyPress( Col_0, NumLockPressed ) ) {
+      sBoolNumLock = !sBoolNumLock;
+      auto ledState = sBoolNumLock ? HIGH : LOW;
+      digitalWrite( LED_1, ledState);    }
+  } // after this brace row 4 is inactive
 
   //SHIFT
   {
