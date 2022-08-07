@@ -5,8 +5,8 @@ Welcome to the Bolt Industries Github Repo.
 
 Here you will find firmware for the Pico 87 Mechanical Keyboard, as well as the open source hardware. 
 
-If you would like to get your hands on a Pico 87 Mechanical keyboard, you can find the project on Kickstarter. 
-https://www.kickstarter.com/projects/1639195067/the-bolt-industries-pico-87-mechanical-keyboard
+If you would like to get your hands on a Pico 87 Mechanical keyboard, you can find the kit in the Bolt Industries store: 
+www.boltind.com
 
 
 Hardware:
